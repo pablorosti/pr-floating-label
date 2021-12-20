@@ -1,0 +1,87 @@
+.input input {
+  width: 100%;
+  height: 20px;
+  background-color: none;
+  border: none;
+  border-bottom: 1px solid gray;
+  outline: 0px;
+  font-size: 17px;
+  margin-top: 20px;
+}
+.input .lbl {
+  position: absolute;
+  width: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid #c7c7c7;
+}
+.input .lbl:after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid #2ecece;
+  transform: translateX(-100%);
+  transition: all 0.3s ease;
+}
+.text {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  transition: all 0.3s ease;
+}
+.input input:focus + .lbl .text,
+.input input:valid + .lbl .text {
+  transform: translateY(-90%);
+  font-size: 14px;
+  color: #2ecece;
+}
+.input input:focus + .lbl:after,
+.input input:valid + .lbl:after {
+  transform: translateX(0%);
+}
+
+/* --------- error input --------- */
+
+.inputError input {
+  width: 100%;
+  height: 20px;
+  background-color: none;
+  border: none;
+  border-bottom: 1px solid gray;
+  outline: 0px;
+  font-size: 17px;
+  margin-top: 20px;
+}
+.inputError .lbl {
+  position: absolute;
+  width: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid #c7c7c7;
+}
+.inputError .lbl:after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid #ee1111;
+  transform: translateX(-100%);
+  transition: all 0.3s ease;
+}
+.text {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  transition: all 0.3s ease;
+}
+.inputError input:focus + .lbl .text,
+.inputError input:valid + .lbl .text {
+  transform: translateY(-90%);
+  font-size: 14px;
+  color: #ee1111;
+}
+.inputError input:focus + .lbl:after,
+.inputError input:valid + .lbl:after {
+  transform: translateX(0%);
+}
