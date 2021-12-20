@@ -46,6 +46,18 @@
       "limit": "10 KB"
     }
   ],
+  "repository": {
+    "url": "https://github.com/pablorosti/pr-floating-label",
+    "type": "git"
+  },
+  "keywords": [
+    "floating",
+    "input",
+    "floating-input",
+    "pablo",
+    "rostirolla"
+  ],
+  "homepage": "https://github.com/pablorosti/pr-floating-label",
   "devDependencies": {
     "@size-limit/preset-small-lib": "^7.0.4",
     "@types/react": "^17.0.37",
