@@ -5,15 +5,14 @@ interface IProps {
   label: string;
   error?: boolean;
   color?: string;
+  type: string;
 }
 
-export const FloatingInput: React.FC<IProps> = ({ error, label }) => {
+export const FloatingInput: React.FC<IProps> = ({ label, type }) => {
   return (
-    <div className={error ? style.inputError : style.input}>
-      <input type="text" required />
-      <label className={style.lbl}>
-        <span className={style.text}>{label}</span>
-      </label>
+    <div className={style.ih_input}>
+      <input type={type} className={style.ih_form_control} required />
+      <span className={style.ih_input_label}>{label}</span>
     </div>
   );
 };

@@ -1,1 +1,1 @@
-export * from './components/FloatingInput';
+export * from './components';
